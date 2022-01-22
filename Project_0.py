@@ -32,9 +32,10 @@ def legal_moves():
 
 def make_a_move(p1,p2):
     playerInTurn = p1
+    ls = legal_moves()
     print(f"{playerInTurn}'s turn, make a move:")
-    for a in range(len(legal_moves)):
-        print(f"{a}) {legal_moves[0]}")
+    for a in range(len(ls)):
+        print(f"{a}) {ls[a]}")
 
 
 
@@ -44,6 +45,8 @@ def main():
     display_player_scores(player1_score, player2_score)
 
     print_board()
+
+    make_a_move(player1_score, player2_score)
 
     
 main()
