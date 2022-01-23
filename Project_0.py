@@ -1,3 +1,6 @@
+from re import X
+
+
 xoxBoard = [['-', '-', '-',], ['-', '-', '-',], ['-', '-', '-',]]
 xoxBoard[0][2] = 'X'
 def print_board():
@@ -40,6 +43,15 @@ def make_a_move(p1,p2):
 def isTerminal():
     # TODO: Check if there are back to back X's or O's
     pass
+    if xoxBoard[0][0] == xoxBoard[0][1] and xoxBoard[0][0] == xoxBoard[0][2]:
+        return True
+    elif xoxBoard[0][1] == xoxBoard[1][1] and xoxBoard[0][1] == xoxBoard[2][1]:
+        return True
+    elif xoxBoard[0][2] == xoxBoard[1][2] and xoxBoard[0][2] == xoxBoard[2][2]:
+        return True
+    elif xoxBoard[0][0] == xoxBoard[1][0] and xoxBoard[0][0] == xoxBoard[2][0]:
+        return True
+    
 
 def main():
     player1_score = 0
@@ -50,5 +62,5 @@ def main():
 
     make_a_move(player1_score, player2_score)
 
-
+    
 main()
