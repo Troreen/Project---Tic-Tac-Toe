@@ -37,6 +37,39 @@ def make_a_move(p1,p2):
     for a in range(len(ls)):
         print(f"{a}) {ls[a]}")
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 def isTerminal():
     # TODO: Check if there are back to back X's or O's
     pass
