@@ -49,37 +49,6 @@ def start_game():
         if enter == "":
             print("\n"*20)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 def isTerminal():
     # TODO: Check if there are back to back X's or O's
     pass
