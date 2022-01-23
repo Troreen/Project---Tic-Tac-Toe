@@ -1,6 +1,3 @@
-from re import X
-
-
 xoxBoard = [['-', '-', '-',], ['-', '-', '-',], ['-', '-', '-',]]
 xoxBoard[0][2] = 'X'
 def print_board():
