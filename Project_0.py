@@ -37,7 +37,9 @@ def make_a_move(p1,p2):
     for a in range(len(ls)):
         print(f"{a}) {ls[a]}")
 
-
+def isTerminal():
+    # TODO: Check if there are back to back X's or O's
+    pass
 
 def main():
     player1_score = 0
@@ -48,5 +50,5 @@ def main():
 
     make_a_move(player1_score, player2_score)
 
-    
+
 main()
