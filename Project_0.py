@@ -49,6 +49,50 @@ def start_game():
         if enter == "":
             print("\n"*20)
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+def isTerminal():
+    # TODO: Check if there are back to back X's or O's
+    pass
+    if xoxBoard[0][0] == xoxBoard[0][1] and xoxBoard[0][0] == xoxBoard[0][2]:
+        return True
+    elif xoxBoard[0][1] == xoxBoard[1][1] and xoxBoard[0][1] == xoxBoard[2][1]:
+        return True
+    elif xoxBoard[0][2] == xoxBoard[1][2] and xoxBoard[0][2] == xoxBoard[2][2]:
+        return True
+    elif xoxBoard[0][0] == xoxBoard[1][0] and xoxBoard[0][0] == xoxBoard[2][0]:
+        return True
+    
+
 def main():
     start_game()
     player1_score = 0
