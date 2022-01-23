@@ -37,9 +37,20 @@ def make_a_move(p1,p2):
     for a in range(len(ls)):
         print(f"{a}) {ls[a]}")
 
-
+def start_game():
+    print("Hello! Welcome to our game, Tic Tac Toe.")
+    enter = input("Press enter to continue.")
+    print("\n"*27)
+    if enter == "":
+        print("Rules for the game:\nThere will be two players, one playing X and the other one O.\n\nThe player has to get three in a row, whether it being horizontal, vertical or diagonal.\n\nThe moves you can play are written as [collumn number][row number].\n")
+        print("Have fun playing!")
+        enter = input("Press enter to continue.")
+        print("\n"*27)
+        if enter == "":
+            print("\n"*20)
 
 def main():
+    start_game()
     player1_score = 0
     player2_score = 0
     display_player_scores(player1_score, player2_score)
